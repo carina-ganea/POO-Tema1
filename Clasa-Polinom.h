@@ -281,7 +281,7 @@ Polinom operator*(double A, Polinom B) {
 
 Polinom operator/(Polinom A, Polinom B) {
     if (B.grad < 0) {
-        cout << "Nu se imparte la polinom nul, coaie";
+        cout << "Nu se imparte la polinom nul";
         exit(-1);
     }
     if (A.grad < B.grad)
@@ -303,7 +303,7 @@ Polinom operator/(Polinom A, Polinom B) {
 
 Polinom operator/(Polinom A, double B) {
     if (B == 0) {
-        cout << "Nu se imparte la 0, coaie";
+        cout << "Nu se imparte la 0";
         exit(-1);
     } else {
         Polinom C(B);
@@ -336,7 +336,7 @@ Polinom operator%(Polinom A, Polinom B) {
 
 Polinom operator%(Polinom A, double B) {
     if (B == 0) {
-        cout << "Nu se imparte la 0, coaie";
+        cout << "Nu se imparte la 0";
         exit(-1);
     } else {
         Polinom C(B);
@@ -351,7 +351,7 @@ Polinom operator%(double A, Polinom B) {
 
 Polinom operator^(Polinom A, double B) {
     if (B < 0) {
-        cout << "Nu se ridica la putere negativa, coaie";
+        cout << "Nu se ridica la putere negativa";
         exit(-1);
     }
     if (B == 0)
